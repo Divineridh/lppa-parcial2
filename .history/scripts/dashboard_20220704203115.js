@@ -5,7 +5,7 @@ window.onload = () => {
     if (localStorage.logged == "false") {
         Logout();
     }
-    logout.onclick = logout;
+    logout.onclick = cerrarSesion;
     Request();
 }
 
@@ -31,7 +31,7 @@ function Request() {
         .catch(error => console.log(error))
 }
 
-function CargarTabla(usuarios){
+function llenarTabla(usuarios){
     loading.classList.toggle("hidden", true);
     texto.classList.toggle("hidden", true);
     let head = `

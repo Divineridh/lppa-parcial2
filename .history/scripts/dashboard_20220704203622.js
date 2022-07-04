@@ -5,7 +5,7 @@ window.onload = () => {
     if (localStorage.logged == "false") {
         Logout();
     }
-    logout.onclick = logout;
+    logout.onclick = cerrarSesion;
     Request();
 }
 

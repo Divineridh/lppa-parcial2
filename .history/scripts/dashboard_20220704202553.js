@@ -1,25 +1,19 @@
-
-
-window.onload = () => {
-    GetElements();
-    if (localStorage.logged == "false") {
-        Logout();
-    }
-    logout.onclick = logout;
-    Request();
-}
-
-function GetElements(){
+function obtenerElementos(){
     logout = document.getElementById("logout");
+    loading = document.getElementsByClassName("gif")[0];
     texto = document.getElementsByClassName("text")[0];
 }
 
-function Logout(){
-    localStorage.logged = "false";
-    location = "./login.html";
+window.onload = () => {
+    obtenerElementos();
+    if (localStorage.logged == "false") {
+        cerrarSesion();
+    }
+    logout.onclick = cerrarSesion;
+    realizarRequest();
 }
 
-function Request() {
+function realizarRequest() {
     loading.classList.toggle("hidden", false);
     texto.classList.toggle("hidden", false);
     let url = "https://basic-server-one.vercel.app/users";
@@ -31,7 +25,7 @@ function Request() {
         .catch(error => console.log(error))
 }
 
-function CargarTabla(usuarios){
+function llenarTabla(usuarios){
     loading.classList.toggle("hidden", true);
     texto.classList.toggle("hidden", true);
     let head = `
@@ -53,3 +47,7 @@ function CargarTabla(usuarios){
     document.getElementById("contenido").innerHTML = body;
 }
 
+function cerrarSesion(){
+    localStorage.logged = "false";
+    location = "./login.html";
+}
