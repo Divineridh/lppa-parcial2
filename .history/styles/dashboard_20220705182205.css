@@ -34,8 +34,8 @@ th,td{
 
 thead{
     font-weight: 700;
-    background-color: var(--celesteTablaHeader);
-    border-bottom: solid 5px var(--azulTablaHeader);
+    background-color: var(--verdeClaro);
+    border-bottom: solid 5px var(--verdeOscuro);
     color:var(--blanco);
 }
 

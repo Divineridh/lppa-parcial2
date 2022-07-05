@@ -34,7 +34,7 @@ th,td{
 
 thead{
     font-weight: 700;
-    background-color: var(--celesteTablaHeader);
+    background-color: var(--verdeClaro);
     border-bottom: solid 5px var(--azulTablaHeader);
     color:var(--blanco);
 }
