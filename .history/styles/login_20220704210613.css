@@ -28,7 +28,7 @@
     margin-bottom: 30px;
 }
 
-.form-text{
+.form-label-text{
     width: 100%;
     background: none;
     margin-bottom: 8px;
@@ -41,12 +41,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.form-text:focus + .form-lblTxt, .form-txt:not(:placeholder-shown) + .form-lblTxt{
+.form-txt:focus + .form-lblTxt, .form-txt:not(:placeholder-shown) + .form-lblTxt{
     transform: translateY(-13px) scale(0.9);
     transform-origin: left top;
 }
 
-.form-label-text{
+.form-lblTxt{
     color: var(--verdeAgua);
     position:absolute;
     font-size: 15px;
@@ -58,7 +58,7 @@
     transition: transform .5s;
 }
 
-.form-label-error{
+.form-lblError{
     width: 100%;
     color:rgb(255, 0, 0);
     text-align: center;
@@ -69,7 +69,7 @@
     height: 20%;
 }
 
-.form-button{
+.form-btn{
     width: 100%;
     background-color: var(--verdeClaro);
     color:var(--blanco);
@@ -85,7 +85,7 @@
     margin-bottom: 20px;
 }
 
-.form-button:hover{
+.form-btn:hover{
     color: var(--verdeClaro);
     background-color: var(--blanco);
 }

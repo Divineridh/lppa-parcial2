@@ -30,7 +30,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7c7c7c
+    background-color: var(--verdeClaro);
 }
 
 header h1{
@@ -72,8 +72,9 @@ footer{
 }
 
 footer p{
-    color: rgb(0, 0, 0);
+    color: lightgreen;
     font-weight: 700;
+    font-style: oblique;
     text-align: center;
 }
 

@@ -5,13 +5,12 @@ window.onload = () => {
     if (localStorage.logged == "false") {
         Logout();
     }
-    logout.onclick = Logout;
+    logout.onclick = logout;
     Request();
 }
 
 function GetElements(){
     logout = document.getElementById("logout");
-    loading = document.getElementsByClassName("gif")[0];
     texto = document.getElementsByClassName("text")[0];
 }
 

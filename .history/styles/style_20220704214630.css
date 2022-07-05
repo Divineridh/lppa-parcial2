@@ -72,8 +72,9 @@ footer{
 }
 
 footer p{
-    color: rgb(0, 0, 0);
+    color: lightgreen;
     font-weight: 700;
+    font-style: oblique;
     text-align: center;
 }
 

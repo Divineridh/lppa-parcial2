@@ -5,13 +5,12 @@ window.onload = () => {
     if (localStorage.logged == "false") {
         Logout();
     }
-    logout.onclick = Logout;
+    logout.onclick = logout;
     Request();
 }
 
 function GetElements(){
     logout = document.getElementById("logout");
-    loading = document.getElementsByClassName("gif")[0];
     texto = document.getElementsByClassName("text")[0];
 }
 
@@ -26,7 +25,7 @@ function Request() {
     fetch(url)
         .then(response => response.json())
         .then(usuarios => {
-            setTimeout(CargarTabla, 500, usuarios.data)
+            setTimeout(llenarTabla, 500, usuarios.data)
         })
         .catch(error => console.log(error))
 }

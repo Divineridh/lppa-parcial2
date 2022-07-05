@@ -14,9 +14,10 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: var(--negro);
     opacity: 0.9;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,5,86,1) 34%, rgba(9,9,121,1) 53%, rgba(0,153,184,1) 100%);
+    background-image: radial-gradient(#315d07 2px, transparent 2px), radial-gradient(#315d07 2px, #000000 2px);
+    background-size: 80px 80px;
     background-position: 0 0,40px 40px;
     display:flex;
     flex-direction: column;
@@ -30,7 +31,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7c7c7c
+    background-color: var(--verdeClaro);
 }
 
 header h1{
@@ -72,8 +73,9 @@ footer{
 }
 
 footer p{
-    color: rgb(0, 0, 0);
+    color: lightgreen;
     font-weight: 700;
+    font-style: oblique;
     text-align: center;
 }
 
